@@ -6,7 +6,12 @@ import Blog from "./Blog/Blog";
 import BlogDetail from "./BlogDetail/BlogDetail";
 import Cart from "./Cart/Cart.jsx";
 import Checkout from "./Checkout/Checkout";
+import Term from "./Term/Term";
+import Contact from "./Contact/Contact";
+import Search from "./Search/Search";
+import About from "./About/About";
 export {
+  About,
   Home,
   AdminDashboard,
   Book,
@@ -15,4 +20,7 @@ export {
   BlogDetail,
   Cart,
   Checkout,
+  Term,
+  Contact,
+  Search,
 };

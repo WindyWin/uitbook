@@ -1,0 +1,85 @@
+@import "../../../style/_variables.scss";
+
+.header {
+  // justify-content: space-between;
+  width: 100%;
+  .search {
+    width: 320px;
+    max-width: calc(100vw - 2rem);
+    position: relative;
+    &__input {
+      max-width: 100%;
+      border-radius: 40px;
+      &:focus {
+        box-shadow: 0 0 0 0.1rem #999;
+        border-color: #333;
+        outline: 0;
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translate(0, -50%);
+    }
+  }
+  .navbar-brand{
+    margin-right: 3rem;
+  }
+  .navbar-collapse {
+    justify-content: space-between;
+    a[href="/cart"]{
+      position: relative;
+      i{
+        font-size: 1.3rem;
+      }
+      .badge {
+        position: absolute;
+        top: 0;
+        right:0;
+      }
+    }
+    .navigation {
+      a {
+        color: #000;
+        font-weight: 500;
+        &:hover {
+          color: $primary-color !important;
+        }
+      }
+    }
+    .navigation__right{
+      gap: 1rem;
+    }
+    .btn-login {
+      background-color: $secondary-color;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $primary-color;
+      }
+    }
+
+  }
+}
+.header-container {
+  padding: 0 4rem;
+  height: 80px;
+  display: flex;
+  align-content: center;
+}
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+  .header {
+    .navbar-collapse {
+      justify-content: flex-start;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+}
