@@ -43,6 +43,9 @@ function Header() {
             <Nav.Link as={NavLink} to="blog">
               Bài viết
             </Nav.Link>
+            <Nav.Link as={NavLink} to="contact">
+              Liên hệ
+            </Nav.Link>
             <Nav.Link as={NavLink} to="about">
               Giới thiệu
             </Nav.Link>
